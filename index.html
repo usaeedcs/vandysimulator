@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project N.A.S.C.A.R Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add these elements inside the <header> section -->
+    <div id="datetime">
+    <p id="local-time"></p>
+    <p id="local-date"></p>
+    </div>
+    <div id="weather">
+        <p id="weather-info">Loading weather...</p>
+    </div>
+    </head>
+<body>
+    <header>
+        <h1>Project N.A.S.C.A.R</h1>
+        <p>A Virtual Driving Experience</p>
+        <img src="checkered-flag.png" alt="Checkered Flag" id="flag">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#upload">Upload Data</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="chartContainer">
+                <!-- Add Plotly charts and trackers here -->
+            </div>
+        </section>
+
+        <section id="upload">
+            <h2>Upload Data</h2>
+            <input type="file" id="dataFile" accept=".csv, .xlsx">
+            <button id="uploadButton">Upload</button>
+        </section>
+    </main>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
